@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 44 44" fill="none" role="img" aria-labelledby="title">
+  <title id="title">NDLSK B2B Leads</title>
+  <rect width="44" height="44" rx="11" fill="#347512"/>
+  <path d="M11 14h10c5.6 0 9 3.2 9 8s-3.4 8-9 8H11" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11 22h23" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="11" cy="14" r="3.6" fill="#fff"/>
+  <circle cx="11" cy="22" r="3.6" fill="#fff"/>
+  <circle cx="11" cy="30" r="3.6" fill="#fff"/>
+  <circle cx="34" cy="22" r="3.6" fill="#fff"/>
+</svg>

@@ -1,0 +1,19 @@
+
+@import "../components/_review.scss";
+
+section.block-2-reviews {
+    padding: $padding-vertical-big 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $gap;
+        align-items: start;
+
+        @media (max-width: 768px) {
+            & {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

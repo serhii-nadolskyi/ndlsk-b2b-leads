@@ -1,0 +1,332 @@
+@@include('../includes/header.html', {
+  "pageTitle": "NDLSK Leads | B2B Lead Generation Pricing Page",
+  "metaDescription": "A conversion-focused pricing page example for a B2B lead generation offer, with plan comparison, data-point details, FAQs, and clear CTAs.",
+  "metaKeywords": "B2B lead generation website, lead generation landing page, B2B website design, prospecting service website, sales leads website, static website portfolio, Gulp static site, NDLSK",
+  "canonicalTag": "https://serhii-nadolskyi.github.io/ndlsk-b2b-leads/pricing.html",
+  "authorTag": "Serhii Nadolskyi",
+  "robots":"index, follow",
+  "ogTitle":"NDLSK Leads | B2B Lead Generation Pricing Page",
+  "ogDescription":"A conversion-focused pricing page example for a B2B lead generation offer, with plan comparison, data-point details, FAQs, and clear CTAs.",
+  "ogURL":"https://serhii-nadolskyi.github.io/ndlsk-b2b-leads/pricing.html",
+  "ogImage":"https://serhii-nadolskyi.github.io/ndlsk-b2b-leads/assets/images/ndlsk-b2b-leads-og.png",
+  "twTitle":"NDLSK Leads | B2B Lead Generation Pricing Page",
+  "twDescription": "A conversion-focused pricing page example for a B2B lead generation offer, with plan comparison, data-point details, FAQs, and clear CTAs.",
+  "twImage":"https://serhii-nadolskyi.github.io/ndlsk-b2b-leads/assets/images/ndlsk-b2b-leads-og.png",
+  "styleName": "pricing",
+  "pricing": "active",
+})
+
+<div class="pricing">
+
+  <!-- Header -->
+  <section class="block blue pb-40">
+    <div class="container">
+      <h1 class="h1">NDLSK Leads Pays For Itself</h1>
+      <h2 class="h2">(And Then Some)</h2>
+      <p class="text">Join the exclusive group of NDLSK Leads clients that use our leads to get a 10x return and make their money back for years every time they close a deal.</p>
+    </div>
+ </section>
+
+ <!-- Plans -->
+ <section class="plans">
+  <div class="container">
+    <div class="plans-box">
+      <div class="bage-container">
+        <p class="badge">15% discount on annual plans!</p>
+      </div>
+      <input type="radio" name="plan" id="yearly" value="Year" checked/>
+      <label class="button" for="yearly">Yearly</label>        
+      <input type="radio" name="plan" id="monthly" value="Monthly"/>
+      <label class="button" for="monthly">Monthly</label>
+      <div class="cards">
+        <!-- Yearly Plans -->
+        <div class="yearly">
+          <!-- Scale Plan -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Scale Plan",
+            "planPrice":"$149 per month",
+            "planDescription":"You get 2,500+ leads/month from the hottest startups around the world. Perfect for agencies, software providers, investors, and more business owners who are serious about scaling their sales pipeline.<br><br>You save $1,200/month compared to trying to source these leads using in-house operations.",
+            "planButton": {
+              "name":"Subscribe",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"visible",
+              "title":"Custom Title",
+              "description":"",
+            },
+            "plansBenefits1":{
+              "viability":"visible",
+              "title":"You’ll get weekly email reports with:",
+              "description":"<ul><li>All recently funded startups</li><li>CEO details & contact information</li><li>Additional decision maker contacts at each startup</li><li>Verified emails</li><li>LinkedIn & X profiles</li><li>18+ data points for each startup to filter to your ideal customers</li></ul>"
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"You also get:",
+              "description":"<ul><li>Priority support</li><li>Access to our partner apps & tools</li><li>Access to our Master Database of 70,000+ leads</li></ul>"
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"What you’re missing:",
+              "description":"<ul><li>This plan doesn’t include our managed Full Service Agency</li></ul>",
+            },
+          })
+          <!-- Growth Plan -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Growth Plan",
+            "planPrice":"$59 per month",
+            "planDescription":"You get 1,200+ leads/month from the hottest startups around the world. Great for business owners who want to supplement their sales pipeline and discover freshly-funded startups that fit their ideal customer profile.<br><br>You save $900/month compared to trying to source these leads using in-house operations.",
+            "planButton": {
+              "name":"Subscribe",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"",
+              "title":"",
+              "description":"",
+            },
+            "plansBenefits1":{
+              "viability":"visible",
+              "title":"You’ll get weekly email reports with:",
+              "description":"<ul><li>All recently funded startups</li><li>CEO details & contact information</li><li>Verified emails</li><li>LinkedIn & X profiles</li><li>18+ data points for each startup to filter to your ideal customers</li></ul>"
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"You also get:",
+              "description":"<ul><li>Email support</li><li>Access to our partner apps & tools</li><li>Access to our 10k Database of 10,000 leads from recent reports</li></ul>"
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"What you’re missing:",
+              "description":"<ul><li>Additional decision maker contacts at each startup (CMOs, CFOs, etc.)</li><li>Access to our Master Database of 70,000+ leads</li><li>Priority support</li><li>This plan doesn’t include our managed Full Service Agency</li></ul>",
+            },
+          })
+          <!-- Full Service Agency Plan -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Full Service Agency",
+            "planPrice":"Starting at $2,500 per month",
+            "planDescription":"Our fully managed lead generation and outreach service, customized to your ideal customer profile and business goals.<br><br>Save thousands every month and let us handle your lead gen and email campaigns for you.",
+            "planButton": {
+              "name":"Contact Us",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"visible",
+              "title":"The details:",
+              "description":"<ul><li>We source completely custom leads based on your business requirements</li><li>We handle all lead gen, run email campaigns, and book calls for you</li><li>Dedicated account manager & regular reporting</li><li>No commissions – just the monthly price</li><li>3 month minimum engagement</li></ul>",
+            },
+            "plansBenefits1":{
+              "viability":"",
+              "title":"",
+              "description":""
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"",
+              "description":""
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"",
+              "description":"",
+            },
+          })
+          
+        </div>
+        <!-- Monthly Plans -->
+        <div class="monthly">
+          <!-- Scale Plan -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Scale Plan",
+            "planPrice":"$179 per month",
+            "planDescription":"You get 2,500+ leads/month from the hottest startups around the world. Perfect for agencies, software providers, investors, and more business owners who are serious about scaling their sales pipeline.<br><br>You save $1,200/month compared to trying to source these leads using in-house operations.",
+            "planButton": {
+              "name":"Subscribe",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"",
+              "title":"",
+              "description":"",
+            },
+            "plansBenefits1":{
+              "viability":"visible",
+              "title":"You’ll get weekly email reports with:",
+              "description":"<ul><li>All recently funded startups</li><li>CEO details & contact information</li><li>Additional decision maker contacts at each startup</li><li>Verified emails</li><li>LinkedIn & X profiles</li><li>18+ data points for each startup to filter to your ideal customers</li></ul>"
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"You also get:",
+              "description":"<ul><li>Priority support</li><li>Access to our partner apps & tools</li></ul>"
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"What you’re missing:",
+              "description":"<ul><li>Access to our Master Database of 70,000+ leads</li><li>This plan doesn’t include our managed Full Service Agency</li></ul>",
+            },
+          })
+          <!-- Growth Plan -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Growth Plan",
+            "planPrice":"$69 per month",
+            "planDescription":"You get 1,200+ leads/month from the hottest startups around the world. Great for business owners who want to supplement their sales pipeline and discover freshly-funded startups that fit their ideal customer profile.<br><br>You save $900/month compared to trying to source these leads using in-house operations.",
+            "planButton": {
+              "name":"Subscribe",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"",
+              "title":"",
+              "description":"",
+            },
+            "plansBenefits1":{
+              "viability":"visible",
+              "title":"You’ll get weekly email reports with:",
+              "description":"<ul><li>All recently funded startups</li><li>CEO details & contact information</li><li>Verified emails</li><li>LinkedIn & X profiles</li><li>18+ data points for each startup to filter to your ideal customers</li></ul>"
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"You also get:",
+              "description":"<ul><li>Email support</li><li>Access to our partner apps & tools</li></ul>"
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"What you’re missing:",
+              "description":"<ul><li>Additional decision maker contacts at each startup (CMOs, CFOs, etc.)</li><li>Access to our 10k Database of 10,000 leads from recent reports</li><li>Access to our Master Database of 70,000+ leads</li><li>Priority support</li><li>This plan doesn’t include our managed Full Service Agency</li></ul>",
+            },
+          })
+          <!-- Full Service Agency Plan -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Full Service Agency",
+            "planPrice":"Starting at $2,500 per month",
+            "planDescription":"Our fully managed lead generation and outreach service, customized to your ideal customer profile and business goals.<br><br>Save thousands every month and let us handle your lead gen and email campaigns for you.",
+            "planButton": {
+              "name":"Contact Us",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"visible",
+              "title":"The details:",
+              "description":"<ul><li>We source completely custom leads based on your business requirements</li><li>We handle all lead gen, run email campaigns, and book calls for you</li><li>Dedicated account manager & regular reporting</li><li>No commissions – just the monthly price</li><li>3 month minimum engagement</li></ul>",
+            },
+            "plansBenefits1":{
+              "viability":"",
+              "title":"",
+              "description":""
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"",
+              "description":""
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"",
+              "description":"",
+            },
+          })
+          <!-- Free Forever Newsletter -->
+          @@include('../includes/components/card-plan.html', {
+            "planName":"Free Forever Newsletter",
+            "planPrice":"Free",
+            "planDescription":"You only get 100 leads/month – a sample from the previous month’s weekly reports sent to paid subscribers.<br><br>These leads have already been sent to paid NDLSK Leads subscribers.",
+            "planButton": {
+              "name":"Get Started",
+              "url":"./contact.html",
+            },
+            "details":{
+              "viability":"",
+              "title":"",
+              "description":"",
+            },
+            "plansBenefits1":{
+              "viability":"",
+              "title":"",
+              "description":""
+            },
+            "plansBenefits2":{
+              "viability":"visible",
+              "title":"You'll get a monthly email report with:",
+              "description":"<ul><li>A sample of recently funded startups</li><li>Verified general emails</li><li>LinkedIn & X profiles</li><li>12+ data points for each startup</li><li>Limited support</li></ul>"
+            },
+            "negatives":{
+              "viability":"visible",
+              "title":"What you're missing:",
+              "description":"<ul><li>CEO contacts and social media profiles</li><li>Additional decision maker contacts at each startup (CMOs, CFOs, etc.)</li><li>More startups to filter to your ideal clients</li><li>First access to these startups</li><li>Priority support</li><li>Access to our Master Database of 70,000+ leads</li></ul>",
+            },
+          })
+        </div>
+      </div>
+    </div>
+    <!-- New Futures -->
+    <div class="new-features">
+      <p class="text"><b>New Features:</b> We recently overhauled one of our most-used data points to help you find your ideal customers, and added 6 new data points in the last few months! The latest feature addition was just rolled out in our April 2024 reports – website traffic data for all of our leads.</p>
+    </div>
+  </div>
+ </section>
+
+ <!-- FAQs -->
+<div class="faq">
+  <!-- FAQs -->
+  @@include('../includes/block/block-accordion.html', {
+  "bgColorClass":"gray",
+  "title": "Common Questions",
+  "item1": {
+      "show":"show",
+      "question":"What are decision maker contacts?",
+      "answer":"In the Scale Plan, we also include a weekly report filled with verified email addresses, social media profiles, and more data points for decision makers at the recently funded startups for the week (the same startups in the Growth Plan report).<br><br>These are roles like CTOs, CMOs, Business Development, Head of Growth, and others that you can add to your outreach campaigns. CEOs are busy people, so the more high-quality contacts you have, the more deals you can close!",
+  },
+  "item2": {
+    "show":"show",
+    "question":"What are the 10k and 70k leads databases?",
+    "answer":"Clients who sign up for the <b>annual</b> Growth or Scale plans get access to our Master Database, filled with leads from previous NDLSK Leads reports of recently funded startups.<br><br>Annual Growth Plan clients get access to our 10k leads database filled with company contacts, CEO details, and other data points you find in all our Growth Reports.<br><br>Annual Scale Plan clients get access to our entire leads database <b>and</b> our decision makers database from every historical NDLSK Leads Scale report.<br><br>Only a handful of NDLSK Leads clients have access to these databases, so they aren’t abused, and you’ll be able to filter by our dozens of data points to reach your ideal customer profile.",
+  },
+  "item3": {
+    "show":"show",
+    "question":"When do I get my leads?",
+    "answer":"NDLSK Leads reports will hit your inbox every Monday morning for Growth and Scale plan clients.<br><br>Free Forever and legacy Startup clients will only receive one email at the beginning of each month.<br><br>For every NDLSK Leads plan, we’ll also send you leads from last month’s reports right away. Growth and Scale annual plan clients will also receive instant access to our 10k or 60k leads databases.",
+  },
+  "item4": {
+    "show":"show",
+    "question":"Am I going to be competing with 1,000s of others?",
+    "answer":"Actually, no. We keep access to our research limited to just a few clients and constantly increase pricing for new subscribers.<br><br>This keeps our service exclusive, reduces competition for leads, and improves the experience for everyone involved (including your prospects).<br><br>Additionally:<ul><li>Most of them offer different kinds of services</li><li>Most have different business sizes and niche requirements</li><li>So, there really isn't that much lead competition overlap.</li></ul>",
+  },
+  "item5": {
+    "show":"show",
+    "question":"I am against mass email blasts – can I find my ideal clients in NDLSK Leads reports?",
+    "answer":"Yes, you can! Our lists contain lots of data points so that you can laser target your ideal customer without the need to mass email. You can email only the customers that fit your criteria with a meaningful and customized email that builds relationships.",
+  },
+  "item6": {
+    "show":"show",
+    "question":"I get zero replies to my emails. What should I do?",
+    "answer":"You should follow our email setup, templates, and guidelines found in our Members Area so that you can get to your potential client’s primary inbox and nurture great relationships.<br><br>NDLSK Leads clients also report that our leads convert at 2x the average of other startup lead lists.",
+  },
+  "item7": {
+    "show":"show",
+    "question":"What information is included in NDLSK Leads reports?",
+    "answer":"All NDLSK Leads reports contain the following fields, hand-curated by our team:<ul><li>Organization name</li><li>Website</li><li>Description of the company</li><li>Industries</li><li>B2B or B2C designation</li><li>City</li><li>Country</li><li>Twitter (X) profile</li><li>LinkedIn profile</li><li>Contact email</li><li>Email verification status (only verified emails included)</li><li>Funding date</li><li>Funding amount</li><li>Funding round/type</li><li>Link to recent funding announcement</li><li>Number of employees</li><li>Founding year</li><li>Technologies used</li><li>CEO name – paid plans only</li><li>CEO email – paid plans only</li><li>CEO email verification status (only verified emails included) – paid plans only</li><li>CEO Twitter (X) profile – paid plans only</li><li>CEO LinkedIn profile – paid plans only</li></ul>In addition, Scale plan clients receive a separate report with additional decision maker contacts at each startup that received recent funding. These are contacts like CMOs, CFOs, Head of Growth, and others.",
+  },
+  "item8": {
+    "show":"show",
+    "question":"How do you source information?",
+    "answer":"All our data points, email addresses, names, and company information are publicly available in sources like SEC filings, news publications, and social media. It’s never from leaked or hacked websites or sources.",
+  },
+  "item9": {
+    "show":"show",
+    "question":"What kind of companies are in NDLSK Leads reports?",
+    "answer":"NDLSK Leads reports contain companies that have received funding across all industries and locations. No matter what criteria you have for your ideal clients, you’ll be able to use the dozens of data points in our NDLSK Leads reports to filter to your ICP and customize your email campaigns.",
+  },
+  "item10": {
+    "show":"show",
+    "question":"What types of businesses should use NDLSK Leads?",
+    "answer":"NDLSK Leads is a great fit for digital agencies, consultants, SaaS companies, and other service providers looking for new clients. We also have several NDLSK Leads clients that use our lead lists for other purposes, like startup investors and journalists who want to stay updated on the startup scene.",
+  },
+  })
+</div>
+ 
+
+</div>
+
+@@include('../includes/footer.html', {
+  "pricing":"active",
+})

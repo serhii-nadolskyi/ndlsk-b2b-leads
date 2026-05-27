@@ -1,0 +1,23 @@
+@import "../_fonts.scss";
+@import "../_variables.scss";
+@import "../_global.scss";
+@import "../_header.scss";
+@import "../blocks/_block-3-reviews.scss";
+@import "../_footer.scss";
+
+#testimonials {
+    padding-bottom: $padding-vertical-big;
+
+    // Title
+    h1 {
+        text-align: center;
+
+        + p {
+            text-align: center;
+        }
+    }
+
+
+
+
+}

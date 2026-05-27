@@ -1,0 +1,29 @@
+@import "../_fonts.scss";
+@import "../_variables.scss";
+@import "../_global.scss";
+@import "../_header.scss";
+@import "../_footer.scss";
+
+#privacy {
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: $padding-vertical-medium;
+    
+        a {
+            font-weight: 500;
+        }
+    }
+    
+    ul, ol, dl {
+        padding-left: 40px;
+        margin-bottom: $padding-vertical-medium;
+        li {
+            font-size: 20px;
+            margin-bottom: $padding-vertical-small;
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+    }
+}

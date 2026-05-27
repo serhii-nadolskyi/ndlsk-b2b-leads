@@ -1,0 +1,70 @@
+@import "../_fonts.scss";
+@import "../_variables.scss";
+@import "../_global.scss";
+@import "../_header.scss";
+@import "../_footer.scss";
+
+#contact {
+  .contact__intro {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact__methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap;
+    align-items: stretch;
+    margin-top: $padding-vertical-medium;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact__method {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    padding: $padding-vertical-medium;
+    border: 1px solid rgba($color-primary, 0.14);
+    border-radius: 8px;
+    color: $color-primary;
+    background-color: white;
+
+    &:hover {
+      border-color: $color-link;
+      transform: translateY(-2px);
+    }
+  }
+
+  .contact__method-label {
+    color: $color-link;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: $padding-vertical-small;
+  }
+
+  .contact__method-title {
+    color: $color-primary;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: $padding-vertical-small;
+  }
+
+  .contact__method-text {
+    color: $color-primary;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: $padding-vertical-medium;
+  }
+
+  .contact__method-action {
+    color: $color-link;
+    font-weight: 800;
+    margin-top: auto;
+  }
+}

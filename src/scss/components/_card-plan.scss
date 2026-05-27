@@ -1,0 +1,135 @@
+.card-plan {
+    // border: 1px solid rgb($color-primary, .4);;
+    padding: $padding-vertical-medium;
+    box-shadow: 0px 0px 4px rgb($color-primary, .4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc($gap*2);
+    margin-bottom: $gap;
+    background-color: white;
+
+    .mobile-only {
+        display: none;
+    }
+
+    @media (max-width:768px) {
+        & {
+            grid-template-columns: 1fr;
+            gap: $gap;
+
+            .mobile-only {
+                display: block;
+
+                .button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // Column
+    .card-plan__column {
+        
+        // Title
+        .h2 {
+            color: $color-link;
+            margin-bottom: 0;
+
+            @media (max-width:768px) {
+                & {                  
+                    text-align: center;
+
+                    + .h4 {
+                        text-align: center;
+                    }
+                }
+                
+            }
+        }
+
+        // SubTitle
+        .h4 {
+            color: $color-link;
+        }
+
+        .neg .h4 {
+            color: #D50000;
+        }
+
+        // Plan Description
+        .plan-description {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: $padding-vertical-medium;
+        }
+
+        // Button
+        .button {
+            font-weight: 700;
+            font-size: 22px;
+            width: 200px;
+            max-width: 100%;
+            text-align: center;
+            @media (max-width:768px) {
+                & {
+                    display: none;
+                }
+            }
+        }
+
+        // Benefits 
+        .benefits {
+
+            display: none;
+
+            &.visible {
+                display: block;
+            }
+            
+            // Title
+            // Description
+            .description {
+                margin-bottom: calc($padding-vertical-big/1.4);
+                font-size: 18px;
+                line-height: 1.5;
+
+                ul {
+                    list-style-position: outside;
+                    margin-bottom: $padding-vertical-medium;
+                    li {
+                        margin-bottom: $margin-links;
+                        list-style-position: inside;
+                        font-size: 18px;
+                        line-height: 1.5;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            &.poss {
+                .description {
+                    ul {
+                        list-style-image: url('../../assets/images/check.svg');
+                    }
+                }
+            }
+
+            &.neg {
+                .description {
+                    ul {
+                        list-style-image: url('../../assets/images/cancel.svg');
+                    }
+                }
+            }
+
+            &:last-child {
+                .description {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

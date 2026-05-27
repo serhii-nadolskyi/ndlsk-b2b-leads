@@ -1,0 +1,32 @@
+section.block-join-companies {
+    padding: $padding-vertical-big 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .h2 {
+        margin-bottom: 60px;
+    }
+
+    .clients {
+        display: flex;
+        gap: $gap;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }       
+    }
+    
+}

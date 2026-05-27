@@ -1,0 +1,62 @@
+
+@import "../components/_review.scss";
+
+section.block-3-reviews {
+    padding: $padding-vertical-big 0;
+
+    .container {
+
+        .h2 {
+            text-align: center;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: $gap;
+            align-items: start;
+
+            .review {
+                flex-direction: column;
+
+                // Image
+                .review__avatar {
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 100px;
+                    margin-bottom: $padding-vertical-medium;
+                    margin-right: 0;
+
+                    .review_image {
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 100px;
+                    }
+                }
+
+                // Text
+                .review_text {
+                    text-align: center;
+                    font-size: 20px;
+                }
+
+                // Author & Position
+                .review_author, .review_position {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+
+    
+            @media (max-width: 768px) {
+                & {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

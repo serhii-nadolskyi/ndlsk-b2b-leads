@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serhii-nadolskyi.github.io/ndlsk-b2b-leads/sitemap.xml

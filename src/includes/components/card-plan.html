@@ -1,0 +1,43 @@
+<div class="card-plan">
+    <!-- Column 1 -->
+    <div class="card-plan__column">
+        <p class="h2">@@planName</p>
+        <p class="h4">@@planPrice</p>
+        <div class="plan-description">@@planDescription</div>
+        <a class="button" href="@@planButton.url">@@planButton.name</a>
+    </div>
+    <!-- Column 2 -->
+    <div class="card-plan__column">
+        <!-- Benefits -->
+        <div class="benefits poss @@details.viability">
+            <p class="h4">@@details.title</p>
+            <div class="description">
+                @@details.description
+            </div>
+        </div>
+        <!-- Benefits -->
+        <div class="benefits poss @@plansBenefits1.viability">
+            <p class="h4">@@plansBenefits1.title</p>
+            <div class="description">
+                @@plansBenefits1.description
+            </div>
+        </div>
+        <!-- Benefits -->
+        <div class="benefits poss @@plansBenefits2.viability">
+            <p class="h4">@@plansBenefits2.title</p>
+            <div class="description">
+                @@plansBenefits2.description
+            </div>
+        </div>
+        <!-- Benefits -->
+        <div class="benefits neg @@negatives.viability">
+            <p class="h4">@@negatives.title</p>
+            <div class="description">
+                @@negatives.description
+            </div>
+        </div>
+    </div>
+    <div class="mobile-only">
+        <a class="button " href="@@planButton.url">@@planButton.name</a>
+    </div>
+</div>

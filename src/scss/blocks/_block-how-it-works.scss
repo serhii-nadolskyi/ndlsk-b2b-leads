@@ -1,0 +1,84 @@
+section.block-how-it-works {
+    padding-top: $padding-vertical-big ;
+    padding-bottom: $padding-vertical-big;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    .anchor {
+        position: absolute;
+        z-index: -999;
+        width: 10px;
+        height: 10px;
+        top: -$header-height;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    // Title
+    .title {
+        font-size: var(--fs-h2);
+        line-height: var(--lh-h2);
+        font-weight: var(--fw-h2);
+        padding-bottom: $padding-vertical-medium;
+    }
+
+    // All Items
+    .items-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $gap;
+        align-items: flex-start;
+
+        // Item
+        .item {
+            // Icon
+            .item-icon {
+                height: 100px;
+                width: auto;
+                margin-bottom: calc($padding-vertical-medium/1.5);
+            }
+            // Title
+            .item-title {
+                font-size: 20px;
+                font-weight: 700;
+                // margin-bottom: $padding-vertical-small;
+                line-height: 1.5;
+                // background-color: red;
+                height: 60px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                        line-clamp: 2; 
+                -webkit-box-orient: vertical;
+            }
+            // Text
+            .item-text {
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 768px) {
+            & {
+                grid-template-columns: 1fr;
+
+                .item {
+                    max-width: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .item-title {
+                        margin-bottom: calc($padding-vertical-medium/1.5);
+                        height: auto;
+                        overflow: unset;
+                        -webkit-line-clamp: 4; /* number of lines to show */
+                                line-clamp: 4; 
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title Tag -->
+    <title>@@pageTitle</title>
+
+    <!-- Meta Description Tag -->
+    <meta name="description" content="@@metaDescription">
+
+    <!-- Meta Keywords Tag (Optional) -->
+    <meta name="keywords" content="@@metaKeywords">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="@@canonicalTag">
+        
+    <!-- Author Tag -->
+    <meta name="author" content="@@authorTag">
+
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="@@robots">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="@@ogTitle">
+    <meta property="og:description" content="@@ogDescription">
+    <meta property="og:url" content="@@ogURL">
+    <meta property="og:image" content="@@ogImage">
+    <meta property="og:image:width" content="1440">
+    <meta property="og:image:height" content="756">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ndlsk">
+    <meta name="twitter:title" content="@@twTitle">
+    <meta name="twitter:description" content="@@twDescription">
+    <meta name="twitter:image" content="@@twImage">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font connection hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/pages/@@styleName.min.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <header class="header top-nav">
+      <div class="container">
+        <!-- Logo -->
+        <div class="header-logo">
+          <a class="header-logo__link" href="./index.html">
+            <img
+              class="header-logo__image"
+              src="./assets/images/logo.svg"
+              alt="NDLSK Leads"
+              width="190"
+              height="58"
+            />
+          </a>
+        </div>
+        <!-- Burger -->
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <!-- Menu -->
+        <ul class="menu">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="./index.html#how-it-works"
+              >Features</a
+            >
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="./testimonials.html"
+              >Testimonials</a
+            >
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="./faqs.html">FAQs</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="./dfy.html"
+              >Full Service Agency</a
+            >
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link button" href="./pricing.html"
+              >Register</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    <!-- Page Content -->
+    <main class="content" id="main-content">

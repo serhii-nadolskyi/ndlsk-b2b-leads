@@ -1,0 +1,52 @@
+.card-review {
+    padding: $padding-vertical-medium;
+    border: 1px solid rgba($color-primary, .12);
+    border-radius: 8px;
+    box-shadow: 0 10px 26px rgba($color-primary, .08);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    transition: box-shadow $transition-duration $transition-function, transform $transition-duration $transition-function, border-color $transition-duration $transition-function;
+
+    &:hover {
+        border-color: rgba($color-link, .45);
+        box-shadow: 0 16px 34px rgba($color-primary, .12);
+        transform: translateY(-2px);
+    }
+
+    .h3 {
+        color: $color-link;
+        margin-bottom: $margin-links;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: $padding-vertical-medium;
+        flex: 1;
+
+        ul {
+            list-style-position: outside;
+            margin-bottom: $padding-vertical-medium;
+            li {
+                margin-bottom: $margin-links;
+                list-style-position: inside;
+                font-size: 18px;
+                line-height: 1.5;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .button {
+        font-weight: 700;
+        font-size: 18px;
+        width: max-content;
+        min-width: 160px;
+        max-width: 100%;
+        text-align: center;
+    }
+}

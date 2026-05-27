@@ -1,0 +1,27 @@
+<section class="block-video @@bgColorClass">
+    <div class="container">
+        <!-- Video -->
+        <div class="video">
+            <video
+                class="video__player"
+                width="1200"
+                height="675"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="@@videoTitle">
+                <source src="@@videoURL" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Review -->
+        @@include('../components/review.html', {
+            "avatarURL": "@@review.avatarURL",
+            "text":"@@review.text",
+            "author": "@@review.author",
+            "position": "@@review.position",
+        })
+    </div>
+</section>

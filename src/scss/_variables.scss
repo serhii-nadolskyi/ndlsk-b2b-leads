@@ -1,0 +1,68 @@
+// Sizes
+$container-width: 1200px;
+$header-height: 80px;
+
+// Padding
+$padding-horizontal: 15px;
+$padding-vertical-small: 10px;
+$padding-vertical-medium: 30px;
+$padding-vertical-big: 80px;
+
+// Margin
+$margin-links: 15px;
+$margin-vertical: 30px;
+
+// Colors
+$color-primary: #0E1534;
+$color-primary-accent: #ffffff;
+$color-link: #347512;
+$color-link-active: #285b0e;
+
+// Transitions
+$transition-duration: .4s;
+$transition-function: ease-in-out;
+
+// Gap
+$gap:30px;
+
+
+:root {
+    // Font H1
+    --fs-h1: 4.375rem;
+    --lh-h1: 1.3;
+    --fw-h1: 700;
+    // Font H2
+    --fs-h2: 3rem;
+    --lh-h2: 1.3;
+    --fw-h2: 700;
+    // Font H3
+    --fs-h3: 1.875rem;
+    --lh-h3: 1.3;
+    --fw-h3: 700;
+    // Font H4
+    --fs-h4: 22px;
+    --lh-h4: 1.3;
+    --fw-h4: 700;
+
+}
+
+@media (max-width:600px) {
+
+    :root {
+        --fs-h1: 4rem;
+        --fs-h2: calc(var(--fs-h1) * 0.75);
+        --fs-h3: calc(var(--fs-h1) * 0.43);
+        --fs-h4: calc(var(--fs-h1) * 0.3);
+    }
+    
+}
+@media (max-width:500px) {
+    
+
+    :root {
+        --fs-h1: 3rem;
+        --fs-h2: calc(var(--fs-h1) * 0.75);
+        --fs-h3: calc(var(--fs-h1) * 0.43);
+        --fs-h4: calc(var(--fs-h1) * 0.3);
+    }
+}

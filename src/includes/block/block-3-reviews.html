@@ -1,0 +1,28 @@
+<section class="block-3-reviews  @@bgColorClass @@additionalClass">
+    <div class="container">
+        <p class="h2 @@titleClass">@@title</p>
+        <div class="reviews">
+            <!-- Review1 -->
+            @@include('../components/review.html', {
+                "avatarURL": "@@review1.avatarURL",
+                "text":"@@review1.text",
+                "author": "@@review1.author",
+                "position": "@@review1.position",
+            })
+            <!-- Review2 -->
+            @@include('../components/review.html', {
+                "avatarURL": "@@review2.avatarURL",
+                "text":"@@review2.text",
+                "author": "@@review2.author",
+                "position": "@@review2.position",
+            })
+            <!-- Review3 -->
+            @@include('../components/review.html', {
+                "avatarURL": "@@review3.avatarURL",
+                "text":"@@review3.text",
+                "author": "@@review3.author",
+                "position": "@@review3.position",
+            })
+        </div>
+    </div>
+</section>

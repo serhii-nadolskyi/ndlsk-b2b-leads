@@ -1,0 +1,104 @@
+section.block-accordion {
+    padding: $padding-vertical-big 0;
+
+    // Title
+    p.h2 {
+        text-align: center;
+    }
+
+    // Accordion
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .collapsible {
+        &-accordion {
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px -2px rgba(0, 0, 0, 0.5);
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+
+        &-item {
+            &-label {
+                display: flex;
+                justify-content: space-between;
+                padding: $padding-horizontal;
+                font-size: 22px;
+                font-weight: 700;
+                cursor: pointer;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                // background: rgba($color: $color-link,1) ;
+                background: linear-gradient(45deg, rgba($color-link, .1) 0%, rgba($color-link-active, .18) 100%);
+                color: $color-primary;
+
+                &::after {
+                    // content: "\003E";
+                    content: "\2192";
+                    width: 1em;
+                    height: 1em;
+                    position: relative;
+                    right: 0px;
+                    // font-size: 22px;
+                    font-weight: 900;
+                    text-align: center;
+                    transition: all .35s;
+                    // transform: rotate(90deg);
+                }
+            }
+
+            &-content {
+                max-height: 0;
+                height: 0;
+                padding: 0 $padding-horizontal;
+                // background: rgba($color: $color-link, $alpha: .1) ;
+                background: rgba($color: white, $alpha: .6) ;
+                transition: all 0.3s;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 1.5;
+
+                p {
+                    margin-bottom: $padding-vertical-small;
+                }
+
+                ul {
+                    padding-left: 40px;
+                    margin-top: $padding-vertical-medium;
+                    margin-bottom: $padding-vertical-medium;
+                    li {
+                        font-size: 20px;
+                        margin-bottom: $padding-vertical-small;
+                        &:last-child {
+                            margin-bottom:0;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    
+
+    input:checked {
+        +.collapsible-item-label {
+            &::after {
+                transform: rotate(90deg) translateY(-5px);
+            }
+        }
+
+        ~.collapsible-item-content {
+            max-height: 100vh;
+            height: fit-content;
+            padding: $padding-horizontal;
+        }
+    }
+}

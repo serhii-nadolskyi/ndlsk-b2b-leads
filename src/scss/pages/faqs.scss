@@ -1,0 +1,18 @@
+@import "../_fonts.scss";
+@import "../_variables.scss";
+@import "../_global.scss";
+@import "../_header.scss";
+@import "../_footer.scss";
+
+// Page Content
+#faqs {
+
+    h1 {
+        text-align: center;
+
+        + p {
+            text-align: center;
+        }
+    }
+
+}

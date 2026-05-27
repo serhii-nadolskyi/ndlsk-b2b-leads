@@ -1,0 +1,158 @@
+@import "../_fonts.scss";
+@import "../_variables.scss";
+@import "../_global.scss";
+@import "../_header.scss";
+@import "../components/card-plan.scss";
+@import "../blocks/_block-accordion.scss";
+@import "../_footer.scss";
+
+// Pricing
+.pricing {
+
+    // Title
+    .h1 {
+        text-align: center;
+
+        + .h2 {
+            text-align: center;
+            margin-top: -30px;
+
+            + .text {
+                text-align: center;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    // Plans
+    .plans {
+        padding-top: calc($padding-vertical-big/2);
+        padding-bottom: $padding-vertical-big;
+
+        // Plans
+        .plans-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $gap;
+
+            
+
+            // Badge
+            .bage-container {
+                grid-column: 1/3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .badge {
+                    background-color: $color-link;
+                    display: inline;
+                    padding: calc($padding-vertical-small*1.5);
+                    border-radius: 25px 0 25px 0;
+                    color: white;
+                    font-weight: 500;
+                    font-size: 22px;
+                    text-align: center;
+                    box-shadow: 0px 0px 4px rgb(black, 0.9);
+                    -ms-user-select: none;
+                    -webkit-user-select: none;
+                    user-select: none;
+                }
+            }
+
+            // Input
+            input {
+                display: none;;
+            }
+
+            label {
+                -ms-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;
+                display: inline;
+                cursor: pointer;
+                background-color: transparent;
+                color: $color-link;
+                border: 1px solid $color-link;
+                display: inline-block;
+                font-weight: 700;
+                font-size: 22px;
+                padding: calc($padding-vertical-small*1.5) $padding-vertical-small;
+                width: 200px;
+                max-width: 100%;
+                text-align: center;
+                border-radius: 8px;
+                transition: $transition-duration $transition-function;
+                transition-property: background-color, color, border;
+
+                &:hover {
+                    background-color: $color-link;
+                    color: white;
+                }
+
+                @media (max-width:768px) {
+                    & {
+                        width: 150px;
+                    }
+                }
+                @media (max-width:420px) {
+                    & {
+                        width: 130px;
+                    }
+                }
+            }
+
+            label:first-of-type{
+                margin-left: auto;
+            }
+
+
+            input:checked + label {
+                background-color: $color-link;
+                color: $color-primary-accent;
+                border: 1px solid transparent;
+            }
+
+            input:checked + label:hover {
+                background-color: $color-link-active;
+                color: white;
+            }
+
+
+            #yearly:checked {
+                ~ .cards .monthly {
+                    display: none;
+                }
+            }
+
+            #monthly:checked {
+                ~ .cards .yearly {
+                    display: none;
+                }
+            }
+           
+            // Cards
+            .cards {
+                grid-column: 1/3;
+            }
+        }
+
+
+        // New Features
+        .new-features {
+            border: 4px solid $color-link;
+            text-align: center;
+            padding: $padding-vertical-medium;
+
+            p {
+                margin-bottom: 0;
+
+                b {
+                 color: $color-link;   
+                }
+            }
+        }
+    }
+
+}

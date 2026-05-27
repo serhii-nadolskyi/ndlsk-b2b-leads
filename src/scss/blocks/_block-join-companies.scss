@@ -1,0 +1,57 @@
+section.block-join-companies {
+    padding: $padding-vertical-big 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .title {
+        font-size: var(--fs-h3);
+        line-height: var(--lh-h3);
+        font-weight: var(--fw-h3);
+        margin-bottom: $margin-vertical;
+    }
+
+    .clients {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: $gap;
+        justify-content: space-between;
+        align-items: center;
+
+        picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-image {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        @media (max-width:900px) {
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .client-image {
+                    width: auto;
+                    max-width: unset;
+                    margin-right: $gap;
+                    margin-bottom: $gap;
+                }
+
+                picture:last-child .client-image {
+                    margin-right: 0;
+                }
+
+            }
+        }
+
+       
+    }
+    
+}
